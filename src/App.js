@@ -8,7 +8,7 @@ const App = () => {
   return (
     <AppState>
       <Fragment>
-        <Navbar title="The Navbar" />
+        <Navbar title="React Front End App" />
         <main className="main">
           <Demo />
         </main>
