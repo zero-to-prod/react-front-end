@@ -1,9 +1,10 @@
 import React, { Fragment, useState } from "react";
-import ParagraphControl from "../buttons/ParagraphControl";
-import Send from "../buttons/Send";
+import Control from "./Control";
+import Send from "./Send";
 import Paragraphs from "../paragraph/Paragraphs";
+import Indicator from "./Indicator";
 
-const Demo = () => {
+const ParagraphGenerator = () => {
   const [numberOfParagraphs, setNumberOfParagraphs] = useState(0);
 
   const increment = () => {
@@ -15,16 +16,16 @@ const Demo = () => {
     }
   };
   return (
-    <Fragment>
-      <div className="flex mx-auto justify-between">
-        <ParagraphControl props={{ title: "Subtract" }} clicked={decrement} />
-        {numberOfParagraphs}
-        <ParagraphControl props={{ title: "Add" }} clicked={increment} />
+    <div className="px-4 md:px-0">
+      <div className="grid grid-cols-5 gap-4 text-center my-4 ">
+        <Control title="Subtract" clicked={decrement} />
+        <Indicator value={numberOfParagraphs} />
+        <Control title="Add" clicked={increment} />
       </div>
       <Send number_of_paragraphs={numberOfParagraphs} />
       <Paragraphs />
-    </Fragment>
+    </div>
   );
 };
 
-export default Demo;
+export default ParagraphGenerator;
