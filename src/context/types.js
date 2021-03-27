@@ -1,0 +1,2 @@
+export const GET_PARAGRAPHS = "GET_PARAGRAPHS";
+export const SET_LOADING = "SET_LOADING";

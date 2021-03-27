@@ -1,0 +1,3 @@
+.paragraph {
+    @apply mt-4 text-justify text-xl;
+}
