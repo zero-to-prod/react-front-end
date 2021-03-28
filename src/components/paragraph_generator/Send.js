@@ -3,17 +3,10 @@ import AppContext from "../../context/app/appContext";
 
 const Send = ({ number_of_paragraphs }) => {
   const appContext = useContext(AppContext);
-  const { loading, paragraphs } = appContext;
+  const { loading } = appContext;
   const onClick = () => {
     appContext.getParagraphs(number_of_paragraphs);
   };
-
-  const loadingIndicator = () => {
-    if (this.loading) {
-      return "";
-    }
-  };
-
   return (
     <div>
       <button

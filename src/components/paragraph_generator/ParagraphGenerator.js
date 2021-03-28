@@ -1,11 +1,11 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import Control from "./Control";
 import Send from "./Send";
 import Paragraphs from "../paragraph/Paragraphs";
 import Indicator from "./Indicator";
 
 const ParagraphGenerator = () => {
-  const [numberOfParagraphs, setNumberOfParagraphs] = useState(0);
+  const [numberOfParagraphs, setNumberOfParagraphs] = useState(1);
 
   const increment = () => {
     setNumberOfParagraphs((prevCount) => ++prevCount);
