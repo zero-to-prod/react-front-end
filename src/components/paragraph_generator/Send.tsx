@@ -1,7 +1,9 @@
 import React, { useContext } from "react";
 import AppContext from "../../context/app/appContext";
-
-const Send = ({ number_of_paragraphs }) => {
+interface Props {
+  number_of_paragraphs: number;
+}
+const Send: React.FC<Props> = ({ number_of_paragraphs }) => {
   const appContext = useContext(AppContext);
   const { loading } = appContext;
   const onClick = () => {

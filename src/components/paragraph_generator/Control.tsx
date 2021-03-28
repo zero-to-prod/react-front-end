@@ -1,6 +1,9 @@
-import React, { Fragment } from "react";
-
-const Control = ({ title, clicked }) => {
+import React, { Fragment, MouseEventHandler } from "react";
+interface Props {
+  title: string;
+  clicked: MouseEventHandler;
+}
+const Control: React.FC<Props> = ({ title, clicked }) => {
   return (
     <Fragment>
       <button
