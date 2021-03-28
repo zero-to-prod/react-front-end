@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Control from "./Control";
 import Send from "./Send";
-import Paragraphs from "../paragraph/Paragraphs";
+import Paragraphs from "./Paragraphs";
 import Indicator from "./Indicator";
 
 const ParagraphGenerator = () => {
@@ -11,7 +11,7 @@ const ParagraphGenerator = () => {
     setNumberOfParagraphs((prevCount) => ++prevCount);
   };
   const decrement = () => {
-    if (numberOfParagraphs > 0) {
+    if (numberOfParagraphs > 1) {
       setNumberOfParagraphs((prevCount) => --prevCount);
     }
   };
