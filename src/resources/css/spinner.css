@@ -1,13 +1,12 @@
-.loader {
-    border-top-color: #3498db;
+.spinner {
+    @apply ease-linear rounded-full border-2 border-t-2 border-blue-400 h-6 w-6;
+}
+
+.spinner {
+    border-top-color: #d1e4f5;
     -webkit-animation: spinner 1.5s linear infinite;
     animation: spinner 1.5s linear infinite;
 }
-
-.loader {
-    @apply ease-linear rounded-full border-2 border-t-2 border-gray-200 h-6 w-6;
-}
-
 @-webkit-keyframes spinner {
     0% {
         -webkit-transform: rotate(0deg);
