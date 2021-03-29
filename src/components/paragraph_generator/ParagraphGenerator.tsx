@@ -16,8 +16,8 @@ const ParagraphGenerator = () => {
     }
   };
   return (
-    <div className="px-4 md:px-0">
-      <div className="grid grid-cols-5 gap-4 text-center my-4 ">
+    <div id="paragraph_generator">
+      <div className="control-indicator-wrapper">
         <Control title="Subtract" clicked={decrement} />
         <Indicator number={numberOfParagraphs} />
         <Control title="Add" clicked={increment} />

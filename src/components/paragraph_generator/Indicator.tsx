@@ -3,7 +3,7 @@ interface Props {
   number: number;
 }
 const Indicator: React.FC<Props> = ({ number }) => {
-  return <div className="md:text-4xl text-3xl my-auto">{number}</div>;
+  return <div className="indicator">{number}</div>;
 };
 
 export default Indicator;
